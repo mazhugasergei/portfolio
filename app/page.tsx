@@ -6,14 +6,14 @@ export default function Page() {
   return (
     <main className="space-y-8">
       <div>
-        <h1 className={`${displayFont.className} flex flex-col leading-snug`}>
+        <h1 className={`${displayFont.className} flex flex-col text-6xl leading-snug`}>
           <span>Hey, I'm Sergei.</span>
           <span>
             I code <span className="text-foreground/60">websites.</span>
           </span>
         </h1>
 
-        <p className="max-w-[60%] text-balance text-muted-foreground mt-2">
+        <p className="max-w-[60%] text-balance text-lg text-muted-foreground mt-2">
           A web developer with a passion for creating visually stunning and intuitive websites. Currently working at
           Molotov Group in Vladivostok.
         </p>
@@ -26,7 +26,7 @@ export default function Page() {
       <section>
         <h2 className="mb-4">New Drops</h2>
 
-        <ul className="grid grid-cols-2 gap-4">
+        <ul className="grid grid-cols-2 gap-4 md:gap-8">
           {Array.from({ length: 2 }).map((_, i) => (
             <li key={i}>
               <Link href="/" className="block overflow-hidden border rounded-md">
